@@ -1,17 +1,5 @@
 'use strict';
 
-
-
-
-//  console.log( document.querySelector('.message').textContent);
-//  document.querySelector('.message').textContent = 'Correct secretNumber !';
-
-// document.querySelector('.number').textContent = 13;
-// score = document.querySelector('.score').textContent = 10;
-
-// document.querySelector('.guess').value=23;
-// console.log( document.querySelector('.guess').value);
-
 let secretNumber = Math.trunc(Math.random() * 20 )+ 1 ;
 let score = 5;
 let highscore = 0;
@@ -29,7 +17,7 @@ if(!guess){
 
 //player wins
 }else if (guess === secretNumber){
-    // document.querySelector('.message').textContent = 'Correct Number!'; 
+
     displayMessage('correct number! YAyyy')
     document.querySelector('body').style.backgroundColor  = '#60b347' ;
     document.querySelector('.number').style.width = '30rem'
